@@ -1,0 +1,21 @@
+{
+  "author": "G.Sinnott <g@sinnott.cc>",
+  "name": "videocore",
+  "description": "Report status and commands of Videocore / Raspberry Pi GPU",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/autr/videocore.git"
+  },
+  "main": "index.js",
+  "license": "ISC",
+  "files": [
+    "ini.js"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "ini-alt": "^2.0.1"
+  }
+}

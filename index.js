@@ -1,5 +1,5 @@
 const { spawn, execSync } = require('child_process')
-const ini = require('../ini')
+const ini = require('ini-alt')
 
 module.exports = {
 
@@ -82,7 +82,6 @@ module.exports = {
             }
         ]
         nested.forEach( o => o.args.forEach( a => methods[`${o.cmd} ${a}`] = o.func ))
-        console.log(Object.keys(methods))
         const cmds = Object.keys( methods )
         let str = ''
         for (let i = 0; i < cmds.length; i++) {
